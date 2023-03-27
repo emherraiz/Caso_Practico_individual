@@ -9,7 +9,7 @@ from pymongo import MongoClient
 
 try:
 	# Conectar a la db, host y puerto
-	conn = MongoClient(host='localhost', port=27017)
+	conn = MongoClient(host='mongo', port=27017)
 	# Obtener base de datos
 	db = conn.local
 except:
