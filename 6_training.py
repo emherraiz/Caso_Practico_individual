@@ -24,10 +24,11 @@ class CatDogDataset(Dataset):
         self.train_dir = train_dir
         self.transform = transform
         self.images = img_list
-        
+
+
     def __len__(self):
         return len(self.images)
-    
+
     def __getitem__(self, index):
         image_path = os.path.join(self.train_dir, self.images[index])
         label = self.images[index].split(".")[0]
